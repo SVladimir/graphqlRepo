@@ -4,3 +4,11 @@ graphql:
     # Enable or disable the introspection query. Disabling it puts your server in contravention of the GraphQL
     # specification and expectations of most clients, so use this option with caution
     introspection-enabled: true
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
