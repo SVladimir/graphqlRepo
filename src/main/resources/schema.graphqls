@@ -1,6 +1,8 @@
+scalar LocalDate
 type Book{
     title: String!
     isbn: String!
+    publishedDate: LocalDate
     authors: [Author]
 }
 type Author{

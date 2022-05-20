@@ -1,6 +1,9 @@
 package com.aptkde.learngraphqljava.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -8,6 +11,7 @@ import java.util.Set;
 @Entity
 public class Book {
     private String title;
+    private LocalDate publisherDate;
     @Id
     private String isbn;
     @ManyToMany(cascade = {
@@ -59,5 +63,13 @@ public class Book {
 
     public void setIsbn(String isbn) {
         this.isbn = isbn;
+    }
+
+    public LocalDate getPublisherDate() {
+        return publisherDate;
+    }
+
+    public void setPublisherDate(LocalDate publisherDate) {
+        this.publisherDate = publisherDate;
     }
 }

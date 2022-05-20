@@ -6,7 +6,7 @@ graphql:
     introspection-enabled: true
 spring:
   datasource:
-    url: jdbc:h2:file:C:/Users/Vlaimir/IdeaProjects/testdbd
+    url: jdbc:h2:file:C:/Users/Vladimir/testdbd1
     driverClassName: org.h2.Driver
     username: sa
     password:

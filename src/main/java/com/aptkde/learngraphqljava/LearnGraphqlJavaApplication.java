@@ -10,6 +10,7 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 
 @SpringBootApplication
@@ -26,7 +27,8 @@ public class LearnGraphqlJavaApplication implements ApplicationRunner {
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		Book book=new Book("Learn GraphQL","222:2222:3333");
+		/*Book book=new Book("Learn GraphQL","222:2222:3333");
+		book.setPublisherDate(LocalDate.of(2019,11,4));
 		Author eve =new Author("Eveee");
 		Author alex= new Author("Alex");
 		book.addAuthor(eve);
@@ -35,12 +37,13 @@ public class LearnGraphqlJavaApplication implements ApplicationRunner {
 		bookRepository.save(book);
 
 		Book book1=new Book("Learn GraphQL1","111:111:1111");
+		book1.setPublisherDate(LocalDate.of(2022,11,4));
 		Author eve1 =new Author("Evee1");
 		Author alex1= new Author("Alex1");
-		book.addAuthor(eve1);
-		book.addAuthor(alex1);
+		book1.addAuthor(eve1);
+		book1.addAuthor(alex1);
 		authorRepository.saveAll(Arrays.asList(eve1,alex1));
-		bookRepository.save(book1);
+		bookRepository.save(book1);*/
 
 	}
 }
