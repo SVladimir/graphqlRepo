@@ -1,0 +1,10 @@
+mutation createAuthor($author: AuthorWrapper)
+{createAuthor(author: $author)
+{name
+id}}
+
+{
+    "author":{
+        "name":"nametest"
+    }
+}

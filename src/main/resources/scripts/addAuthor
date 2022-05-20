@@ -1,0 +1,10 @@
+mutation addAuthor($authorId:String!, $isbn: String!)
+{addAuthor(authorId: $authorId,isbn: $isbn)
+{isbn
+title
+}}
+
+{ "authorId": "94698000-5a6a-4adf-86f1-c8b0f80942d0",
+  "isbn": "2222222"
+
+}

@@ -1,0 +1,11 @@
+mutation createBook($book: BookWrapper)
+{createBook(book: $book)
+{title
+isbn}}
+
+{
+    "book":{
+        "title":"test 2",
+        "isbn":"12222222"
+    }
+}

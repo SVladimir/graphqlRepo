@@ -1,0 +1,21 @@
+query getBook( $isbn: String!,$isbn2: String!){
+    book1: getBook(isbn: $isbn){
+        ...book
+    }
+      book2: getBook(isbn: $isbn2){
+        ...book
+    }
+}
+
+ fragment book on Book {
+    title
+    isbn
+    authors{
+            name
+            }
+        }
+
+
+    {"isbn":"222:2222:3333",
+    "isbn2":"111:111:1111"
+    }
